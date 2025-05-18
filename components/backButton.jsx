@@ -4,7 +4,7 @@ import theme from "../constant/theme";
 
 const BackButton = ({ size = 26, router }) => {
   return (
-    <Pressable onPress={() => router.back()} style={styles.container}>
+    <Pressable onPress={() => router.push("/")} style={styles.container}>
       <Icon
         name={"arrowLeft"}
         size={size}

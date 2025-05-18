@@ -46,7 +46,6 @@ export default function Index() {
                   fontFamily: theme.fonts.medium,
                 }}
               >
-                {" "}
                 Login
               </Text>
             </Pressable>
@@ -88,7 +87,7 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   bottomTextContainer: {
-    gap: 2,
+    gap: 4,
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",

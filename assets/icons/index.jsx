@@ -1,11 +1,13 @@
 import theme from "../../constant/theme";
 import ArrowLeft from "./ArrowLeft";
+import ArrowRight from "./ArrowRight";
 import Book from "./Book";
 import Call from "./Call";
 import Camera from "./Camera";
 import Comment from "./Comment";
 import Delete from "./Delete";
 import Edit from "./Edit";
+import Gift from "./Gift";
 import Heart from "./Heart";
 import Home from "./Home";
 import Image from "./Image";
@@ -44,7 +46,9 @@ const icons = {
   logout: Logout,
   image: Image,
   video: Video,
-  explore: Book,
+  book: Book,
+  gift: Gift,
+  arrowRight: ArrowRight,
 };
 
 const Icon = ({ name, ...props }) => {

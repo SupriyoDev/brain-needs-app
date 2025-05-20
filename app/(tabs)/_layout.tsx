@@ -46,9 +46,7 @@ const AppLayout = () => {
         name="learn"
         options={{
           title: "Learn",
-          tabBarIcon: ({ color, size }) => (
-            <Icon name={"explore"} color={color} />
-          ),
+          tabBarIcon: ({ color, size }) => <Icon name={"book"} color={color} />,
         }}
       />
       <Tabs.Screen

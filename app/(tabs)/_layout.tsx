@@ -12,30 +12,50 @@ const AppLayout = () => {
   ) : (
     <Tabs
       screenOptions={{
-        tabBarShowLabel: false,
-        tabBarActiveTintColor: theme.color.buttonDark,
+        tabBarActiveTintColor: "#007aff",
+        tabBarInactiveTintColor: theme.color.text,
         headerShown: false,
+
+        tabBarStyle: {
+          backgroundColor: "#fff",
+          borderTopLeftRadius: 40,
+          borderTopRightRadius: 40,
+          height: 60,
+          paddingBottom: 10,
+          paddingTop: 5,
+          shadowColor: "#000",
+          shadowOffset: { width: 0, height: -1 },
+          shadowOpacity: 0.1,
+          shadowRadius: 3,
+          elevation: 10,
+        },
+        tabBarLabelStyle: {
+          fontFamily: theme.fonts.bold,
+          fontSize: 12,
+        },
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
           title: "Home",
-          tabBarIcon: ({ color, size }) => <Icon name={"home"} />,
+          tabBarIcon: ({ color, size }) => <Icon name={"home"} color={color} />,
         }}
       />
       <Tabs.Screen
         name="learn"
         options={{
-          title: "Explore",
-          tabBarIcon: ({ color, size }) => <Icon name={"explore"} />,
+          title: "Learn",
+          tabBarIcon: ({ color, size }) => (
+            <Icon name={"explore"} color={color} />
+          ),
         }}
       />
       <Tabs.Screen
         name="profile"
         options={{
           title: "Profile",
-          tabBarIcon: ({ color, size }) => <Icon name={"user"} />,
+          tabBarIcon: ({ color, size }) => <Icon name={"user"} color={color} />,
         }}
       />
     </Tabs>

@@ -1,5 +1,6 @@
 import theme from "../../constant/theme";
 import ArrowLeft from "./ArrowLeft";
+import Book from "./Book";
 import Call from "./Call";
 import Camera from "./Camera";
 import Comment from "./Comment";
@@ -43,6 +44,7 @@ const icons = {
   logout: Logout,
   image: Image,
   video: Video,
+  explore: Book,
 };
 
 const Icon = ({ name, ...props }) => {
